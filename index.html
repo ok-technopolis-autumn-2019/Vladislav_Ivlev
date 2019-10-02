@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo</title>
+</head>
+<body>
+<div class="main-todo-app">
+    <table class="todos-table" align="center" border="1" width="385" cellpadding="10">
+        <caption class="todos-table_title">
+            <font size="10" face="Avantgarde">todos</font>
+        </caption>
+        <thead class="todos-table_input-field">
+        <tr>
+            <th align="left">
+				<input type="text" size="55" placeholder="Whats needs to be done?"></font></input>
+            </th>
+        </tr>
+        </thead>
+        <tfoot class="todos-table_rows">
+        <tr>
+            <td>
+                <span class="todos-table_rows_text" id="todos-table_rows_text_item">3 items left</span>
+                <input class="todos-table_rows_input" id="todos-table_rows_input_item" type="button" value="All">
+                <span class="todos-table_rows_text" id="todos-table_rows_text_item-one">Active</span>
+                <span class="todos-table_rows_text" id="todos-table_rows_text_item-two">Completed</span>
+                <span class="todos-table_rows_text" id="todos-table_rows_text_item-three">Clear completed</span>
+            </td>
+        </tr>
+        </tfoot>
+        <tbody class="todos-table_rows_items">
+        <tr>
+            <td>
+                <input class="todos-table_rows_items_item" id="todos-table_rows_items_group-one" type="checkbox">
+                <label for="todos-table_rows_items_group-one">HTML</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input class="todos-table_rows_items_item-one" id="todos-table_rows_items_group-two" type="checkbox" checked="checked">
+                <label for="todos-table_rows_items_group-two"><s>CSS</s></label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input class="todos-table_rows_items_item-two" id="todos-table_rows_items_group-three" type="checkbox">
+                <label for="todos-table_rows_items_group-three">JS</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input class="todos-table_rows_items_item-three" id="todos-table_rows_items_group-four" type="checkbox">
+                <label for="todos-table_rows_items_group-four">JS tools</label>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
