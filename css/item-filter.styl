@@ -1,0 +1,15 @@
+.item-filter
+  display flex
+
+.item-filter__input
+  position absolute
+  left -9999px
+  &:checked
+    & + .item-filter__text
+      border-color #E6E6E6
+
+.item-filter__text
+  padding 5px
+  border 1px solid
+  border-radius 2px
+  border-color transparent
