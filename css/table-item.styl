@@ -5,13 +5,13 @@
   display flex
   align-items center
   min-height 60px
-  border-bottom 1px solid $color.grayish_three
+  border-bottom 1px solid color.grayish_three
   box-sizing border-box
-  font-size $font_size.normal
-  color $color.gray_two
+  font-size font_size.normal
+  color color.gray_two
 
 .todos-table__item:focus-within, .todos-table__item:hover
-  background $background_color.item_hover
+  background background_color.item_hover
 
 .table-item__view
   display flex
@@ -23,8 +23,8 @@
   flex-shrink 0
   width 45px
   height 45px
-  background-color $background_color.item
-  border 1px solid $color.grayish_four
+  background-color background_color.item
+  border 1px solid color.grayish_four
   border-radius 50%
   box-sizing border-box
   flex-shrink 0
@@ -33,12 +33,12 @@
   hide_block();
   &:checked
     & + .table-item__check
-      border-color $border_color.checkbox
+      border-color border_color.checkbox
       background-image url(../icons/check.svg)
       background-repeat no-repeat
       background-position center
     & ~ .table-item__text
-      color $color.grayish_four
+      color color.grayish_four
       text-decoration-line line-through
   &:focus
     & + .table-item__check

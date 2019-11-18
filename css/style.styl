@@ -7,20 +7,20 @@ body
   flex-flow column
   align-items center
   background-color rgba(0, 0, 0, 0.0015)
-  color $color.grayish_four
-  font-family $font_family
+  color color.grayish_four
+  font-family font_family
 
 .main-todo-app
-  font-size $font_size.big
+  font-size font_size.big
 
 .control-panel
   display flex
   justify-content space-between
   height 50px
-  color $color.gray_one
-  border-top 1px solid $color.grayish_three
+  color color.gray_one
+  border-top 1px solid color.grayish_three
   box-sizing border-box
-  font-size $font_size.small
+  font-size font_size.small
 
 .control-panel__item
   padding 0px 15px 0px 15px
@@ -28,10 +28,10 @@ body
 
 .item-clear
   border none
-  background-color $background_color.item
-  font-size $font_size.small
-  color $color.gray_one
-  font-family $font_family
+  background-color background_color.item
+  font-size font_size.small
+  color color.gray_one
+  font-family font_family
 
 .item-filter
   display flex
@@ -40,7 +40,7 @@ body
   hide_block();
   &:checked
     & + .item-filter__text
-      border-color $color.grayish_three
+      border-color color.grayish_three
 
 .item-filter__text
   padding 5px
@@ -51,7 +51,7 @@ body
 .todos-table__head
   display flex
   min-height 60px
-  box-shadow inset 0px -1px 0px $color.grayish_three
+  box-shadow inset 0px -1px 0px color.grayish_three
 
 .table-head__select-all
   width 60px
@@ -72,25 +72,25 @@ body
   height 100%
   flex-grow 1
   border 0px
-  font-size $font_size.normal
-  color $color.grey_two
-  font-family $font_family
+  font-size font_size.normal
+  color color.grey_two
+  font-family font_family
   &::placeholder
     font-style italic
-    font-size $font_size.normal
-    color $color.grayish_four
+    font-size font_size.normal
+    color color.grayish_four
 
 .todos-table__item
   display flex
   align-items center
   min-height 60px
-  border-bottom 1px solid $color.grayish_three
+  border-bottom 1px solid color.grayish_three
   box-sizing border-box
-  font-size $font_size.normal
-  color $color.gray_two
+  font-size font_size.normal
+  color color.gray_two
 
 .todos-table__item:focus-within, .todos-table__item:hover
-  background $color.grayish_one
+  background color.grayish_one
 
 .table-item__view
   display flex
@@ -102,8 +102,8 @@ body
   flex-shrink 0
   width 45px
   height 45px
-  background-color $background_color.item
-  border 1px solid $color.grayish_four
+  background-color background_color.item
+  border 1px solid color.grayish_four
   border-radius 50%
   box-sizing border-box
   flex-shrink 0
@@ -112,12 +112,12 @@ body
   hide_block();
   &:checked
     & + .table-item__check
-      border-color $border_color.checkbox
+      border-color border_color.checkbox
       background-image url(../icons/check.svg)
       background-repeat no-repeat
       background-position center
     & ~ .table-item__text
-      color $color.grayish_four
+      color color.grayish_four
       text-decoration-line line-through
   &:focus
     & + .table-item__check
@@ -159,13 +159,13 @@ body
   justify-content space-between
   width 570px
   min-height 400px
-  background-color $background_color.item
+  background-color background_color.item
   position relative
   box-shadow 0px 2px 5px rgba(0, 0, 0, 0.25)
   &::before
     height 5px
     width calc(100% - 4px)
-    background-color $background_color.item
+    background-color background_color.item
     position absolute
     top 100%
     left 3px
@@ -175,7 +175,7 @@ body
   &::after
     height 10px
     width calc(100% - 8px)
-    background-color $background_color.item
+    background-color background_color.item
     position absolute
     top 100%
     left 6px
