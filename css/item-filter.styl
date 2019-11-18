@@ -1,11 +1,11 @@
 @import "values.styl"
+@import "functions.styl"
 
 .item-filter
   display flex
 
 .item-filter__input
-  position absolute
-  left -9999px
+  hide_block();
   &:checked
     & + .item-filter__text
       border-color $color.grayish_three

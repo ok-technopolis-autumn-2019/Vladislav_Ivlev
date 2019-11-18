@@ -1,4 +1,5 @@
 @import "values.styl"
+@import "functions.styl"
 
 .todos-table__item
   display flex
@@ -29,8 +30,7 @@
   flex-shrink 0
 
 .table-item__checkbox
-  position absolute
-  left -9999px
+  hide_block();
   &:checked
     & + .table-item__check
       border-color $border_color.checkbox
