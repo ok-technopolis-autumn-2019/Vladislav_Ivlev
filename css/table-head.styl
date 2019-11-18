@@ -1,7 +1,9 @@
+@import "values.styl"
+
 .todos-table__head
   display flex
   min-height 60px
-  box-shadow inset 0px -1px 0px #E6E6E6
+  box-shadow inset 0px -1px 0px $color.grayish_three
 
 .table-head__select-all
   width 60px
@@ -22,10 +24,10 @@
   height 100%
   flex-grow 1
   border 0px
-  font-size 24px
-  color #666666
-  font-family "Roboto", sans-serif
+  font-size $font_size.normal
+  color $color.gray_two
+  font-family $font_family
   &::placeholder
     font-style italic
-    font-size 24px
-    color #CCCCCC
+    font-size $font_size.normal
+    color $color.grayish_four
