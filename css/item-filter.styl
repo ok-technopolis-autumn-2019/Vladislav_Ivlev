@@ -1,0 +1,17 @@
+@import "values.styl"
+@import "functions.styl"
+
+.item-filter
+  display flex
+
+.item-filter__input
+  hide_block();
+  &:checked
+    & + .item-filter__text
+      border-color color.grayish_three
+
+.item-filter__text
+  padding 5px
+  border 1px solid
+  border-radius 2px
+  border-color transparent
